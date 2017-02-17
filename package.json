@@ -1,0 +1,18 @@
+{
+  "name": "delodurerp",
+  "version": "1.0.0",
+  "description": "ERP Implementation for Delodur",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Devbox Solutions Inc.",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.16.1",
+    "ejs": "^2.5.5",
+    "express": "^4.14.1",
+    "moment": "^2.17.1",
+    "mongoose": "^4.8.2"
+  }
+}

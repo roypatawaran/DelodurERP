@@ -1,0 +1,19 @@
+<% include partials/header %>
+
+<div class="container">
+    <div class="row">
+        <h1 style="text-align: center;"> Create New Product Entry (Batch) </h1>
+        <div style="width: 30%; margin: 30px auto;">
+            <form id="formid" action="/product/search" method="POST">
+            	<div class="form-group">
+                   <input class="form-control" name="partNum" type="text" placeholder="Part Number"> 
+                </div>
+                <button type="submit" class="btn btn-primary btn-lg">SUBMIT</button>
+            </form>
+            <a style="text-align: center;" href="/">Go Back</a>
+        </div>
+    </div>
+
+</div>
+
+<% include partials/footer %>

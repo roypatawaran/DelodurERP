@@ -1,0 +1,29 @@
+<% include partials/header %>
+
+<div class="container">
+    <table class="table table-striped table-bordered table-list">
+        <thead>
+            <tr>
+                <th></th>
+                <th>Part Number</th>
+                <th>Entry Date</th>
+                <th>Still Valid?</th>
+                <th>Alternatives</th>
+                <th>Quantity Available</th>
+            </tr> 
+        </thead>
+      	<tbody>
+
+      		<% var x=0; prods.forEach(function(prod){ %>
+      		<tr>
+      			<td><a href="/part/activity/<%=prod.partNum%>">View Activity</a></td>
+      			<td><a href="/part/show/<%=prod.partNum%>"><%=prod.productNum%></a></td>
+      			<td><%=prod.entryDate%></td>
+      			<td><%=prod.stillValid%></td>
+      			<td><%=prod.alternatives%></td>
+      			<td><%=prod.QTY%></td>
+      		</tr>
+      		<% }); %>
+      	</tbody>
+
+<% include partials/footer %>

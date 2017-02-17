@@ -1,0 +1,43 @@
+<% include partials/header %>
+
+<div class="container">
+    <div class="row">
+        <h1 style="text-align: center;"> Create New Product Entry (Batch) </h1>
+        <div style="width: 30%; margin: 30px auto;">
+            <form id="formid" action="/part" method="POST">
+                <div class="form-group">
+                   <input class="form-control" id="prtNum" name="partNum" type="text" placeholder="Part Number"> 
+                </div>
+                <div class="form-group">
+                    <select id="S00" name="brand">
+                          <option disabled selected value> -- Select Model -- </option>
+                          <option  value="BMW">BMW</option>
+                          <option value="Benz">Benz</option>
+                    </select>
+                </div>
+            	<div class="form-group">
+                   <input readonly id="pNum" class="form-control" name="productNum" type="text" placeholder="Product Number"> 
+                </div>
+                <div class="form-group">
+                    <input readonly class="form-control" name="entryDate" type="text" placeholder="Entry Date" value="<%=date%>">
+                </div>
+                <select id="S00" name="stillValid">
+                          <option disabled selected value> -- Select Model -- </option>
+                          <option  value="Y">Yes</option>
+                          <option value="N">No</option>
+                </select>
+                <div id="inpgrp" class="form-group">
+                    <input id="alternatives" class="form-control" name="alternativesph" type="text" placeholder="Alternatives">
+                </div>
+                <button type="submit" class="btn btn-primary btn-lg">SUBMIT</button>
+                </div>
+            </form>
+            <a style="text-align: center;" href="/">Go Back</a>
+        </div>
+    </div>
+
+</div>
+
+<script src="/js/inputProducts.js"></script>
+
+<% include partials/footer %>
